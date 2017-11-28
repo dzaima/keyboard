@@ -153,11 +153,9 @@ else if (key = "l")
 else if (key = "'")
   send, ”
 else if (key = "+'")
-  send, "
+  send, ƨ
 else if (key = "^'")
   send, Ƨ
-else if (key = "!'")
-  send, ƨ
 else if (key = "Enter")
   send, ¶
 else if (key = "Delete")

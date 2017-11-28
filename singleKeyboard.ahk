@@ -182,13 +182,10 @@ return
   send, ”
 return
 !+'::
-  send, "
+  send, ƨ
 return
 !^'::
   send, Ƨ
-return
-!+^'::
-  send, ƨ
 return
 !Enter::
   send, ¶
