@@ -1,0 +1,13 @@
+MKTab !{tab}
+MK^Tab ^!{tab}
+MKBS {backspace}
+MKF1 ^r
+MKF2 ^{Enter}
+MKF3 ^!b
+MK^z ^z
+MK^a ^a
+MK^x ^x
+MK^c ^c
+MK^v ^v
+MKF12 throw▓new▓Exception("");{Left}{Left}{Left}
+MKF11 throws▓Exception
