@@ -45,7 +45,7 @@ void setup() {
                 }
               }
               for (String[] convs : new String[][]{{map[j-1].charAt(k)+"", ""}, {map[j-1].charAt(k+1)+"", "+"}, {map[j].charAt(k)+"", "^"}, {map[j].charAt(k+1)+"", "!"}}) {
-                if (!convs[0].equals("#")) charReps.append(convs[1] + name + " " + convs[0]);
+                if (!convs[0].equals("#")) charReps.append(convs[1] + name + " \"" + convs[0].replace("\"", "`\"")+"\"");
               }
               k+=1;
             }
@@ -57,24 +57,21 @@ void setup() {
   }
   
   //print(charReps);
-  boolean first = true;
   for (String s : charReps) {
     String[] data = s.split(" ");
     if (data.length > 1) {
       String str = data[1].length()==1? data[1] : data[1].replace('▓', ' ');
       
-      outMulti+= "\n" + (first? "" : "else ") + "if (key = \"" + data[0].replaceAll("^MK","") + "\")\n  send, " + str;
+      outMulti+= "\nelse if (key = \"" + data[0].replaceAll("^MK","") + "\")\n  send " + str + "";
       
       if (!data[0].matches("MK.+")) { 
-        outSingle+= "\n!" + data[0].replace("!", "+^") + "::\n  send, " + str + "\nreturn";
+        outSingle+= "\n!" + data[0].replace("!", "+^") + "::\n  send " + str + "\nreturn";
               //change ^ to `<^>!` to use altGr only in single keyboard mode
       }
     }
-    first = false;
   }
   
   
-  outMulti+= "\nreturn\nLaunch_Mail::\n  Send, ^!b\nreturn";
   String fnameMulti = "../multiKeyboard.ahk";
   String fnameSingle = "../singleKeyboard.ahk";
   saveStrings(fnameMulti, new String[]{outMulti});

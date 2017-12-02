@@ -1,276 +1,345 @@
-﻿#NoEnv
-SendMode Input
-#InstallKeybdHook
+﻿#InstallKeybdHook
 #UseHook On
-Menu, Tray, Icon, shell32.dll, 283 ; this changes the tray icon to a little keyboard!
 #SingleInstance force
 #MaxHotkeysPerInterval 2000
 #WinActivateForce
 
+BSmode:= false
+BSU:= 0
+BSD:= 0
+BSR:= 0
+BSL:= 0
+#if BSmode
+Numpad5::
+#if
+!Numpad5::
+  if BSMode {
+    sval:= ""
+    for _, side in [BSL,BSU,BSR,BSD] {
+      sval.= ["_","r","d","b"][1+side]
+    }
+    f:= FileOpen("boxChars.txt", "r", "utf-8")
+    done:= false
+    while (!f.AtEOF && !done) {
+      line := f.ReadLine()
+      if (SubStr(line, 1, 4) == sval) {
+        send SubStr(line, 5)
+        done:= true
+      }
+    }
+    f.Close()
+  } else {
+    BSU:= 0
+    BSD:= 0
+    BSR:= 0
+    BSL:= 0
+  }
+  BSMode:= !BSmode
+return
+
+#if BSmode
+  Numpad8::
+    if (BSmode) BSU++
+  return
+  Numpad2::
+    if (BSmode) BSD++
+  return
+  Numpad4::
+    if (BSmode) BSL++
+  return
+  Numpad6::
+    if (BSmode) BSR++
+  return
+  
+  Numpad7::
+    if (BSmode) {
+      BSL++
+      BSU++
+    }
+  return
+  Numpad9::
+    if (BSmode) {
+      BSU++
+      BSR++
+    }
+  return
+  Numpad3::
+    if (BSmode) {
+      BSR++
+      BSD++
+    }
+  return
+  Numpad1::
+    if (BSmode) {
+      BSD++
+      BSL++
+    }
+  return
+#if
 !`::
-  send, ■
+  send "■"
 return
 !+`::
-  send, ’
+  send "’"
 return
 !^`::
-  send, □
+  send "□"
 return
 !1::
-  send, ¹
+  send "¹"
 return
 !+1::
-  send, №
+  send "№"
 return
 !^1::
-  send, ¡
+  send "¡"
 return
 !2::
-  send, ²
+  send "²"
 return
 !3::
-  send, ³
+  send "³"
 return
 !4::
-  send, ⁴
+  send "⁴"
 return
 !5::
-  send, ⁵
+  send "⁵"
 return
 !6::
-  send, ⁶
+  send "⁶"
 return
 !7::
-  send, ⁷
+  send "⁷"
 return
 !8::
-  send, ⁸
+  send "⁸"
 return
 !+8::
-  send, ∙
+  send "∙"
 return
 !9::
-  send, ⁹
+  send "⁹"
 return
 !+9::
-  send, ⁽
+  send "⁽"
 return
 !0::
-  send, ⁰
+  send "⁰"
 return
 !+0::
-  send, ⁾
+  send "⁾"
 return
 !+^0::
-  send, ∆
+  send "∆"
 return
 !-::
-  send, ┌
+  send "┌"
 return
 !+-::
-  send, ╔
+  send "╔"
 return
 !=::
-  send, ≠
+  send "≠"
 return
 !+=::
-  send, ┼
+  send "┼"
 return
 !+^=::
-  send, ╗
+  send "╗"
 return
 !\::
-  send, ┘
+  send "┘"
 return
 !+\::
-  send, ┐
+  send "┐"
 return
 !^\::
-  send, ╝
+  send "╝"
 return
 !NumpadDiv::
-  send, ÷
+  send "÷"
 return
 !NumpadSub::
-  send, κ
+  send "κ"
 return
 !e::
-  send, ē
+  send "ē"
 return
 !r::
-  send, ŗ
+  send "ŗ"
 return
 !+r::
-  send, β
+  send "β"
 return
 !u::
-  send, ζ
+  send "ζ"
 return
 !+u::
-  send, υ
+  send "υ"
 return
 !^u::
-  send, ū
+  send "ū"
 return
 !i::
-  send, ī
+  send "ī"
 return
 !+i::
-  send, Ι
+  send "Ι"
 return
 !o::
-  send, ο
+  send "ο"
 return
 !+o::
-  send, Ο
+  send "Ο"
 return
 !p::
-  send, ╬
+  send "╬"
 return
 !+p::
-  send, ╥
+  send "╥"
 return
 !^p::
-  send, Γ
+  send "Γ"
 return
 ![::
-  send, ⌡
+  send "⌡"
 return
 !+[::
-  send, ∫
+  send "∫"
 return
 !]::
-  send, ⌠
+  send "⌠"
 return
 !Insert::
-  send, «
+  send "«"
 return
 !Home::
-  send, ░
+  send "░"
 return
 !Numpad8::
-  send, ▲
+  send "▲"
 return
 !Numpad9::
-  send, ↕
+  send "↕"
 return
 !NumpadAdd::
-  send, Κ
+  send "Κ"
 return
 !a::
-  send, ā
+  send "ā"
 return
 !+a::
-  send, α
+  send "α"
 return
 !s::
-  send, Θ
+  send "Θ"
 return
 !+s::
-  send, ∑
+  send "∑"
 return
 !d::
-  send, δ
+  send "δ"
 return
 !+d::
-  send, Δ
+  send "Δ"
 return
 !l::
-  send, ⁄
+  send "⁄"
 return
 !'::
-  send, ”
+  send "”"
 return
 !+'::
-  send, ƨ
+  send "ƨ"
 return
 !^'::
-  send, Ƨ
+  send "Ƨ"
 return
 !Enter::
-  send, ¶
+  send "¶"
 return
 !Delete::
-  send, »
+  send "»"
 return
 !end::
-  send, █
+  send "█"
 return
 !+end::
-  send, ▒
+  send "▒"
 return
 !Numpad4::
-  send, ◄
+  send "◄"
 return
 !Numpad6::
-  send, ►
+  send "►"
 return
 !z::
-  send, ž
+  send "ž"
 return
 !+z::
-  send, Ζ
+  send "Ζ"
 return
 !x::
-  send, ι
+  send "ι"
 return
 !c::
-  send, č
+  send "č"
 return
 !v::
-  send, æ
+  send "æ"
 return
 !+v::
-  send, Æ
+  send "Æ"
 return
 !,::
-  send, ≤
+  send "≤"
 return
 !.::
-  send, ≥
+  send "≥"
 return
 !/::
-  send, └
+  send "└"
 return
 !+/::
-  send, ‽
+  send "‽"
 return
 !^/::
-  send, ╚
+  send "╚"
 return
 !Up::
-  send, ─
+  send "─"
 return
 !Numpad2::
-  send, ▼
+  send "▼"
 return
 !Numpad3::
-  send, ↔
+  send "↔"
 return
 !Space::
-  send, ▓
+  send " "
 return
 !+Space::
-  send, θ
+  send "θ"
 return
 !^Space::
-  send, θ
+  send "θ"
 return
 !+^Space::
-  send, θ
+  send "θ"
 return
 !Left::
-  send, ←
+  send "←"
 return
 !Down::
-  send, │
+  send "│"
 return
 !Right::
-  send, →
+  send "→"
 return
 !Numpad0::
-  send, ø
+  send "ø"
 return
 !NumpadDel::
-  send, ±
+  send "±"
 return
