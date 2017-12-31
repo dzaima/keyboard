@@ -74,7 +74,7 @@ local config = {
   [106] = "NumpadMult",
   [107] = "NumpadAdd",
   [109] = "NumpadSub",
-  [110] = "NumpadDel",
+  [110] = "NumpadDot",
   [111] = "NumpadDiv",
   [144] = "NumpadLock", --probably it is best to avoid this key. I keep numlock ON, or it has unexpected effects
 

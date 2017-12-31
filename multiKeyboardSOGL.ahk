@@ -98,15 +98,11 @@ else if (key = "^c")
   send "^c"
 else if (key = "^v")
   send "^v"
-else if (key = "F12")
-  send "throw new Exception(`"`");{Left}{Left}{Left}"
-else if (key = "F11")
-  send "throws Exception"
-else if (key = "`")
+else if (key = "``")
   send "■"
-else if (key = "+`")
+else if (key = "+``")
   send "’"
-else if (key = "^`")
+else if (key = "^``")
   send "□"
 else if (key = "1")
   send "¹"
@@ -278,5 +274,5 @@ else if (key = "Right")
   send "→"
 else if (key = "Numpad0")
   send "ø"
-else if (key = "NumpadDel")
+else if (key = "NumpadDot")
   send "±"

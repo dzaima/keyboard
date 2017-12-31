@@ -5,10 +5,17 @@
 #WinActivateForce
 
 BSmode:= false
+active:= true
 BSU:= 0
 BSD:= 0
 BSR:= 0
 BSL:= 0
+!F9::
+  active:= !active
+return
+
+
+
 #if BSmode
 Numpad5::
 #if
@@ -76,6 +83,8 @@ return
     }
   return
 #if
+
+#if active
 !`::
   send "■"
 return
@@ -340,6 +349,6 @@ return
 !Numpad0::
   send "ø"
 return
-!NumpadDel::
+!NumpadDot::
   send "±"
 return

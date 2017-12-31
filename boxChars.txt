@@ -1,6 +1,6 @@
-//https://github.com/MarkLodato/js-boxdrawing
-//  'LURD'      _=blank r=regular b=bold d=double
-____ 
+// thanks to https://github.com/MarkLodato/js-boxdrawing for creating this mapping! It'd be annoying to make..
+// 'LURD'      _=blank r=regular b=bold d=double
+____╋
 r___╴
 b___╸
 _r__╵
