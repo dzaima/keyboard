@@ -128,6 +128,8 @@ else if (key = "^5")
   send "⁵"
 else if (key = "6")
   send "６"
+else if (key = "+6")
+  send "√"
 else if (key = "^6")
   send "⁶"
 else if (key = "7")
@@ -189,7 +191,7 @@ else if (key = "r")
 else if (key = "+r")
   send "Ｒ"
 else if (key = "^r")
-  send "√"
+  send "ŗ"
 else if (key = "t")
   send "ｔ"
 else if (key = "+t")
@@ -226,10 +228,12 @@ else if (key = "Insert")
   send "«"
 else if (key = "Home")
   send "□"
+else if (key = "Numpad7")
+  send "↶"
 else if (key = "Numpad8")
-  send "⇵"
-else if (key = "Numpad9")
   send "↕"
+else if (key = "Numpad9")
+  send "↷"
 else if (key = "NumpadAdd")
   send "∔"
 else if (key = "a")
@@ -326,6 +330,8 @@ else if (key = "/")
   send "／"
 else if (key = "+/")
   send "？"
+else if (key = "Numpad1")
+  send "⟳"
 else if (key = "Numpad2")
   send "⇵"
 else if (key = "Numpad3")

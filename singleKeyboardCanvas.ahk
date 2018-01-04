@@ -130,6 +130,9 @@ return
 !6::
   send "６"
 return
+!+6::
+  send "√"
+return
 !^6::
   send "⁶"
 return
@@ -221,7 +224,7 @@ return
   send "Ｒ"
 return
 !^r::
-  send "√"
+  send "ŗ"
 return
 !t::
   send "ｔ"
@@ -277,11 +280,14 @@ return
 !Home::
   send "□"
 return
+!Numpad7::
+  send "↶"
+return
 !Numpad8::
-  send "⇵"
+  send "↕"
 return
 !Numpad9::
-  send "↕"
+  send "↷"
 return
 !NumpadAdd::
   send "∔"
@@ -426,6 +432,9 @@ return
 return
 !+/::
   send "？"
+return
+!Numpad1::
+  send "⟳"
 return
 !Numpad2::
   send "⇵"
