@@ -1,0 +1,179 @@
+"xdotool keyup alt; echo -n '■' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + grave
+"xdotool keyup alt; echo -n '’' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Shift + grave
+"xdotool keyup alt; echo -n '□' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Control + grave
+"xdotool keyup alt; echo -n '¹' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + 1
+"xdotool keyup alt; echo -n '№' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Shift + 1
+"xdotool keyup alt; echo -n '¡' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Control + 1
+"xdotool keyup alt; echo -n '²' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + 2
+"xdotool keyup alt; echo -n '³' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + 3
+"xdotool keyup alt; echo -n '⁴' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + 4
+"xdotool keyup alt; echo -n '⁵' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + 5
+"xdotool keyup alt; echo -n '⁶' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + 6
+"xdotool keyup alt; echo -n '⁷' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + 7
+"xdotool keyup alt; echo -n '⁸' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + 8
+"xdotool keyup alt; echo -n '∙' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Shift + 8
+"xdotool keyup alt; echo -n '⁹' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + 9
+"xdotool keyup alt; echo -n '⁽' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Shift + 9
+"xdotool keyup alt; echo -n '⁰' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + 0
+"xdotool keyup alt; echo -n '⁾' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Shift + 0
+"xdotool keyup alt; echo -n '∆' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Control + Shift + 0
+"xdotool keyup alt; echo -n '┌' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + minus
+"xdotool keyup alt; echo -n '╔' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Shift + minus
+"xdotool keyup alt; echo -n '≠' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + equal
+"xdotool keyup alt; echo -n '┼' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Shift + equal
+"xdotool keyup alt; echo -n '╗' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Control + Shift + equal
+"xdotool keyup alt; echo -n '┘' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + backslash
+"xdotool keyup alt; echo -n '┐' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Shift + backslash
+"xdotool keyup alt; echo -n '╝' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Control + backslash
+"xdotool keyup alt; echo -n '÷' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + KP_Divide
+"xdotool keyup alt; echo -n 'κ' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + KP_Subtract
+"xdotool keyup alt; echo -n 'ē' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + e
+"xdotool keyup alt; echo -n 'ŗ' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + r
+"xdotool keyup alt; echo -n 'β' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Shift + r
+"xdotool keyup alt; echo -n 'ζ' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + u
+"xdotool keyup alt; echo -n 'υ' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Shift + u
+"xdotool keyup alt; echo -n 'ū' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Control + u
+"xdotool keyup alt; echo -n 'ī' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + i
+"xdotool keyup alt; echo -n 'Ι' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Shift + i
+"xdotool keyup alt; echo -n 'ο' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + o
+"xdotool keyup alt; echo -n 'Ο' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Shift + o
+"xdotool keyup alt; echo -n '╬' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + p
+"xdotool keyup alt; echo -n '╥' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Shift + p
+"xdotool keyup alt; echo -n 'Γ' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Control + p
+"xdotool keyup alt; echo -n '⌡' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + bracketleft
+"xdotool keyup alt; echo -n '∫' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Shift + bracketleft
+"xdotool keyup alt; echo -n '⌠' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + bracketright
+"xdotool keyup alt; echo -n '«' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Insert
+"xdotool keyup alt; echo -n '░' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Home
+"xdotool keyup alt; echo -n '▲' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + KP_8
+"xdotool keyup alt; echo -n '↕' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + KP_9
+"xdotool keyup alt; echo -n 'Κ' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + KP_Add
+"xdotool keyup alt; echo -n 'ā' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + a
+"xdotool keyup alt; echo -n 'α' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Shift + a
+"xdotool keyup alt; echo -n 'Θ' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + s
+"xdotool keyup alt; echo -n '∑' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Shift + s
+"xdotool keyup alt; echo -n 'δ' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + d
+"xdotool keyup alt; echo -n 'Δ' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Shift + d
+"xdotool keyup alt; echo -n '⁄' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + l
+"xdotool keyup alt; echo -n '”' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + apostrophe
+"xdotool keyup alt; echo -n 'ƨ' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Shift + apostrophe
+"xdotool keyup alt; echo -n 'Ƨ' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Control + apostrophe
+"xdotool keyup alt; echo -n '¶' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Return
+"xdotool keyup alt; echo -n '»' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Delete
+"xdotool keyup alt; echo -n '█' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + End
+"xdotool keyup alt; echo -n '▒' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Shift + End
+"xdotool keyup alt; echo -n '◄' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + KP_4
+"xdotool keyup alt; echo -n '►' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + KP_6
+"xdotool keyup alt; echo -n 'ž' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + z
+"xdotool keyup alt; echo -n 'Ζ' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Shift + z
+"xdotool keyup alt; echo -n 'ι' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + x
+"xdotool keyup alt; echo -n 'č' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + c
+"xdotool keyup alt; echo -n 'æ' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + v
+"xdotool keyup alt; echo -n 'Æ' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Shift + v
+"xdotool keyup alt; echo -n '≤' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + comma
+"xdotool keyup alt; echo -n '≥' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + period
+"xdotool keyup alt; echo -n '└' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + slash
+"xdotool keyup alt; echo -n '‽' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Shift + slash
+"xdotool keyup alt; echo -n '╚' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Control + slash
+"xdotool keyup alt; echo -n '─' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + uparrow
+"xdotool keyup alt; echo -n '▼' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + KP_2
+"xdotool keyup alt; echo -n '↔' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + KP_3
+"xdotool keyup alt; echo -n '▓' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + space
+"xdotool keyup alt; echo -n 'θ' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Shift + space
+"xdotool keyup alt; echo -n 'θ' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Control + space
+"xdotool keyup alt; echo -n 'θ' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + Control + Shift + space
+"xdotool keyup alt; echo -n '←' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + leftarrow
+"xdotool keyup alt; echo -n '│' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + downarrow
+"xdotool keyup alt; echo -n '→' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + rightarrow
+"xdotool keyup alt; echo -n 'ø' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + KP_0
+"xdotool keyup alt; echo -n '±' | xclip -selection clipboard; xdotool key ctrl+v"
+ Release + Mod1 + KP_Separator
+

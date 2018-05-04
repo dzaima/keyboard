@@ -1,0 +1,1 @@
+xbindkeys -f SOGL.xbindkeysrc

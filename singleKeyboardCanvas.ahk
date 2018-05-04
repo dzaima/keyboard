@@ -131,7 +131,7 @@ return
   send "６"
 return
 !+6::
-  send "√"
+  send "＾"
 return
 !^6::
   send "⁶"
@@ -231,6 +231,9 @@ return
 return
 !+t::
   send "Ｔ"
+return
+!^t::
+  send "⌐"
 return
 !y::
   send "ｙ"
@@ -369,6 +372,9 @@ return
 return
 !end::
   send "✓"
+return
+!^end::
+  send "√"
 return
 !Numpad6::
   send "↔"

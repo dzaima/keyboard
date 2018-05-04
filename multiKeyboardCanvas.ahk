@@ -129,7 +129,7 @@ else if (key = "^5")
 else if (key = "6")
   send "６"
 else if (key = "+6")
-  send "√"
+  send "＾"
 else if (key = "^6")
   send "⁶"
 else if (key = "7")
@@ -196,6 +196,8 @@ else if (key = "t")
   send "ｔ"
 else if (key = "+t")
   send "Ｔ"
+else if (key = "^t")
+  send "⌐"
 else if (key = "y")
   send "ｙ"
 else if (key = "+y")
@@ -288,6 +290,8 @@ else if (key = "Delete")
   send "»"
 else if (key = "end")
   send "✓"
+else if (key = "^end")
+  send "√"
 else if (key = "Numpad6")
   send "↔"
 else if (key = "z")

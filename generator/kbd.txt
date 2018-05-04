@@ -9,14 +9,14 @@ MAP Canvas
  ##      ##  ##  ##  ##    ##  ##  ##  ##    ##  ##  ##  ##   ..  ..  ..                 
  ##      ##  ##  ##  ##    ##  ##  ##  ##    ##  ##  ##  ##   ..  ..  ..                 
                                                                                          
- ##  １！  ２＠  ３＃  ４#  ５％  ６√  ７#  ８×  ９（  ０）  －#  ≡＋  ＼｜  ##   ..  ##  ..   ..  ÷#  ＊#  －#
+ ##  １！  ２＠  ３＃  ４#  ５％  ６＾  ７#  ８×  ９（  ０）  －#  ≡＋  ＼｜  ##   ..  ##  ..   ..  ÷#  ＊#  －#
  ##  ¹#  ²#  ³#  ⁴#  ⁵#  ⁶#  ⁷#  ⁸#  ⁹#  ⁰#  ##  ##  ##  ##   ..  ##  ..   ..  ##  ##  ##
                                                                                          
 #####  ｑＱ  ｗＷ  ｅＥ  ｒＲ  ｔＴ  ｙＹ  ｕＵ  ｉＩ  ｏＯ  ｐＰ  ［｛  ］｝  @@@@   «#  □#  ##   ↶#  ↕#  ↷#  ∔#
-#####  ##  ωω  ##  ŗ#  ##  ##  ##  ##  ##  ##  ##  ##  @@@@   ##  ##  ##   ##  ##  ##  ##
+#####  ##  ωω  ##  ŗ#  ⌐#  ##  ##  ##  ##  ##  ##  ##  @@@@   ##  ##  ##   ##  ##  ##  ##
                                                        @@@@                            @@
 .....   ａＡ  ｓＳ  ｄＤ  ｆＦ  ｇＧ  ｈＨ  ｊＪ  ｋＫ  ｌＬ  ；：  ##  @@@@¶#@   »#  ✓#  ##   ##  ##  ↔#  @@
-.....   αα  ∑#  ##  ##  ##  ##  ##  ##  ##  ##  ##  @@@@##@   ##  ##  ##   ##  ##  ##  @@
+.....   αα  ∑#  ##  ##  ##  ##  ##  ##  ##  ##  ##  @@@@##@   ##  √#  ##   ##  ##  ##  @@
                                                                                          
 ........  ｚＺ  ｘＸ  ｃＣ  ｖＶ  ｂＢ  ｎＮ  ｍＭ  #＜  #＞  ／？  .........       ##       ⟳#  ⇵#  ↔#  ##
 ........  ##  ##  ##  ##  ##  ##  ##  ≤#  ≥#  ##  .........       ##       ##  ##  ##  ##
@@ -97,37 +97,55 @@ PARSING
  Es      F1  F2  F3  F4    F5  F6  F7  F8    F9  F1  F1  F1                              
  c!      !!  !!  !!  !!    !!  !!  !!  !!    !!  0!  1!  2!                              
                                                                                          
- bt  11  22  33  44  55  66  77  88  99  00  -!  =!  \!  BS       sc           ND  nM  NS
- ik  11  22  33  44  55  66  77  88  99  00  !!  !!  !!  !!       lk           iv  ul  ub
+ bt  11  22  33  44  55  66  77  88  99  00  mi  eq  bs  BS       sc           nD  nM  nS
+ ik  11  22  33  44  55  66  77  88  99  00  nu  ls  lh  !!       lk           iv  ul  ub
                                                                                          
-Ta     qq  ww  ee  rr  tt  yy  uu  ii  oo  pp  [!  ]!         in  ho  pg   N7  N8  N9  NA
-b!     qq  ww  ee  rr  tt  yy  uu  ii  oo  pp  !!  !!         se  me  up   !!  !!  !!  dd
+Ta     qq  ww  ee  rr  tt  yy  uu  ii  oo  pp  lb  rb         in  ho  pg   N7  N8  N9  NA
+b!     qq  ww  ee  rr  tt  yy  uu  ii  oo  pp  rk  rk         se  me  up   !!  !!  !!  dd
                                                                                          
-        aa  ss  dd  ff  gg  hh  jj  kk  ll  ;!  '!      en    fd  en  pg   N4  N5  N6    
-        aa  ss  dd  ff  gg  hh  jj  kk  ll  !!  !!      te    el  d!  dn   !!  !!  !!    
+        aa  ss  dd  ff  gg  hh  jj  kk  ll  se  ap      en    fd  en  pg   N4  N5  N6    
+        aa  ss  dd  ff  gg  hh  jj  kk  ll  mi  os      te    el  d.  dn   !!  !!  !!    
                                                                                          
-          zz  xx  cc  vv  bb  nn  mm  ,!  .!  /!                  Up       N1  N2  N3    
-          zz  xx  cc  vv  bb  nn  mm  !!  !!  !!                  !!       !!  !!  !!    
+          zz  xx  cc  vv  bb  nn  mm  co  pe  sl                  Up       N1  N2  N3    
+          zz  xx  cc  vv  bb  nn  mm  ma  ri  sh                  ar       !!  !!  !!    
                                                                                          
-                sp                                            le  do  ri   N0      ND    
+                sp                                            le  do  ri   N0      nD    
                 ac                                            ft  wn  gh   !!      ot    
-ente:Enter
 ;
-inse:Insert
-home:Home
-fdel:Delete
-pgup:PgUp
-pgdn:PgDn
+semi:;|semicolon
+coma:,|comma
+peri:.|period
+apos:'|apostrophe
+lbrk:[|bracketleft
+rbrk:]|bracketright
+slsh:/|slash
+bslh:\|backslash
+minu:-|minus
+eqls:=|equal
+end.:end|End
 ;
-left:Left
-down:Down
-righ:Right
+nDiv:NumpadDiv|KP_Divide
+nMul:NumpadMult|KP_Multiply
+nSub:NumpadSub|KP_Subtract
+nDot:NumpadDot|KP_Separator
+; ^ correct?
+sclk:ScrollLock|Scroll_Lock
 ;
-sclk:ScrollLock
-nMul:NumpadMult
+ente:Enter|Return
 ;
-spac:Space
-btik:`
+inse:Insert|Insert
+home:Home|Home
+fdel:Delete|Delete
+pgup:PgUp|Page_Up
+pgdn:PgDn|Page_Down
+;
+left:Left|leftarrow
+down:Down|downarrow
+righ:Right|rightarrow
+Upar:Up|uparrow
+;
+spac:Space|space
+btik:`|grave
 
 This is a template to start making a keyboard layout of your own
 
